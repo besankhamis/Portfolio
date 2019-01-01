@@ -48,10 +48,12 @@ $(document).ready( function(){
       $('#contact').empty().append('Contact');
       $('#contact_container').removeClass('show');
       $('#bio_container').removeClass('show');
+      $('#recent_work').removeClass('show');
       $('#cv_container').addClass('show');
     }else{
       $(this).empty().append('C.V.');
       $('#bio_container').addClass('show');
+      $('#recent_work').addClass('show');
       $('#cv_container').removeClass('show');
     };
   })

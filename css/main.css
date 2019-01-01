@@ -101,32 +101,36 @@ a:hover,
       margin: auto;
       width: 80%; }
   #home #bio_container {
-    margin: 3rem 1rem 4rem 28.3rem;
-    display: none; }
+    margin: 1rem auto 4rem auto;
+    display: none;
+    width: 80%; }
     @media screen and (max-width: 786px) {
       #home #bio_container {
         margin: 0 auto;
+
         display: block; } }
     #home #bio_container.show {
-      display: inline-block; }
+      display: block; }
       @media screen and (max-width: 786px) {
         #home #bio_container.show {
           display: block; } }
+  #home #recent_work.show{
+    display: block;
+  }
   #home #recent_work {
-    position: fixed;
+    position: static;
+    display: none;
     width: 35%;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    left: 0rem;
-    margin-bottom: 3rem; }
+    margin: 0 auto 3rem auto; }
     @media screen and (max-width: 786px) {
       #home #recent_work {
         position: static;
         transform: translateY(0%);
         -webkit-transform: translateY(0%);
         width: 80%;
-        margin: 5rem auto; } }
+        margin: 5rem auto;
+        display: block } }
     #home #recent_work img {
       display: block;
       margin: auto;
@@ -186,7 +190,8 @@ a:hover,
         font-size: 2.5rem;
         display: block;
         width: 80%;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        text-align: center; } }
     @media screen and (max-width: 550px) {
       #home .links {
         width: 90%;
@@ -232,17 +237,22 @@ a:hover,
     border: 1px solid black;
     background-color: white;
     padding: 1rem;
+    width: 50%;
+    margin: 2rem auto;
     margin-bottom: 0rem; }
     @media screen and (max-width: 786px) {
       #home #bio {
-        margin-bottom: 6rem; } }
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        width: 100%; } }
   #home #cv_container,
   #home #contact_container {
     margin-top: 3rem;
     margin-bottom: 4rem;
     display: none;
-    width: 30rem;
-    margin-left: 28.3rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 10000;
     line-height: 1.2em;
     text-align: center; }
@@ -349,7 +359,9 @@ a:hover,
     @media screen and (max-width: 786px) {
       #projects header {
         padding: 1rem;
-        font-size: 2.5rem; } }
+        font-size: 2.5rem; } 
+      #home #contact_container {
+    margin-top: 2rem; } }
     @media screen and (max-width: 550px) {
       #projects header {
         padding: 1rem;
@@ -600,6 +612,8 @@ a:hover,
   width: 100%; }
 
 #homepage_video{
+  display: block;
+  margin: 0 auto;
   width: 100%;
   margin-bottom: 2rem;
 }
@@ -607,6 +621,7 @@ a:hover,
 #heading{
   font-size: 2rem;
   display: block;
+  margin-top: 2rem !important;
   margin-bottom: 2rem !important;
 }
 
