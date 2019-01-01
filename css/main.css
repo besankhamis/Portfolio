@@ -66,6 +66,7 @@ a:hover,
   text-decoration: none; }
 
 #home {
+  width: 100%;
   display: inline-block;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: lighter; }
@@ -267,7 +268,8 @@ a:hover,
       font-family: 'Astloch', serif;
       text-align: center;
       margin-bottom: 0.8rem;
-      line-height: 1.3em; }
+      line-height: 1.3em;
+      font-size: 2rem; }
       @media screen and (max-width: 1000px) {
         #home #cv_container h1,
         #home #contact_container h1 {
@@ -385,10 +387,10 @@ a:hover,
       vertical-align: middle;
       width: 60%;
       font-family: 'Astloch', serif;
-      font-size: 1.8rem; }
+      font-size: 2rem; }
       @media screen and (max-width: 1000px) {
         #projects header #title {
-          font-size: 1.8rem; } }
+          font-size: 2rem; } }
       @media screen and (max-width: 786px) {
         #projects header #title {
           font-size: 3.2rem;
@@ -413,6 +415,10 @@ a:hover,
         /*text-transform: uppercase;*/
         margin-bottom: 0.2rem; }
         @media screen and (max-width: 786px) {
+          #projects header #project_link,
+          #projects header #about_link{
+            font-size: 3.8rem;
+          }
           #projects header #dropdown_links a:link,
           #projects header #dropdown_links a:visited {
             padding: 0.5rem 0.5rem 0.5rem 1rem;
@@ -623,6 +629,20 @@ a:hover,
   display: block;
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 786px) {
+  #heading{
+    margin-top: 8rem !important;
+    font-size: 5rem;
+    margin-bottom: 12rem !important;
+  }
+  #homepage_video{
+    margin-bottom: 13rem;
+  }
+  #home #bio{
+    margin-bottom: 13rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
