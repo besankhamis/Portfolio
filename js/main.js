@@ -33,10 +33,12 @@ $(document).ready( function(){
       $('#cv').empty().append('C.V.');
       $('#contact_container').addClass('show');
       $('#bio_container').removeClass('show');
+      $('#recent_work').removeClass('show');
       $('#cv_container').removeClass('show');
     }else{
       $(this).empty().append('Contact');
       $('#contact_container').removeClass('show');
+      $('#recent_work').addClass('show');
       $('#bio_container').addClass('show');
     };
   })
